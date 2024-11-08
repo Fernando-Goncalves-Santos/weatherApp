@@ -117,7 +117,7 @@ const WeatherConditions = () => {
           </p>
         </div>
       </div>
-      <Link to={"/weatherApp"} className="btn">Voltar</Link>
+      <Link to={"https://fernando-goncalves-santos.github.io/weatherApp/"} className="btn">Voltar</Link>
     </div>
   );
 };

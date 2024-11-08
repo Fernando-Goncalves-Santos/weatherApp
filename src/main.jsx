@@ -14,11 +14,11 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: "/weatherapp",
+        path: "https://fernando-goncalves-santos.github.io/weatherApp/",
         element: <Home/>
       },
       {
-        path: "/Weather",
+        path: "https://fernando-goncalves-santos.github.io/weatherApp/results",
         element: <WeatherConditions/>
       }
     ]
