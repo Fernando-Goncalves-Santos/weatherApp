@@ -49,9 +49,9 @@ const Home = () => {
     // Toda vez que as coordenadas são alteradas, é feita uma nova chamada para a API para retornar os dados do clima
     useEffect(() => {
         if (coord) {
-        const currentWeatherUrl = `http://my.meteoblue.com/packages/current?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul`; //Dados atuais
-        const basicWeatherUrl = ` http://my.meteoblue.com/packages/basic-1h_basic-day?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul`; //previsão das proximas 24h
-        const cloudUrl = `http://my.meteoblue.com/packages/clouds-1h_clouds-day?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul` //Dados de visibilidade, etc.
+        const currentWeatherUrl = `https://my.meteoblue.com/packages/current?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul`; //Dados atuais
+        const basicWeatherUrl = ` https://my.meteoblue.com/packages/basic-1h_basic-day?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul`; //previsão das proximas 24h
+        const cloudUrl = `https://my.meteoblue.com/packages/clouds-1h_clouds-day?lat=${coord.lat}&lon=${coord.lon}&apikey=SCY5GtzdxMvrJNul` //Dados de visibilidade, etc.
         
         // Faz uma requisição HTTP para a API e retorna todos os dados do clima de acordo com a latitude e longitude do lugar
         async function getWeather() {
