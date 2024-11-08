@@ -92,7 +92,7 @@ const Home = () => {
         if (weatherData) {
             // Navegar para a página de clima somente depois de os dados de clima estarem disponíveis
             setLoading(false)
-            navigate("https://fernando-goncalves-santos.github.io/weatherApp/results", { state: { weatherData, location, coord } });
+            navigate("/results", { state: { weatherData, location, coord } });
         }
     }, [weatherData]); // Quando o weatherData mudar, executa o navigate
     

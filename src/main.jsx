@@ -14,16 +14,16 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: "https://fernando-goncalves-santos.github.io/weatherApp/",
+        path: "/",
         element: <Home/>
       },
       {
-        path: "https://fernando-goncalves-santos.github.io/weatherApp/results",
+        path: "/results",
         element: <WeatherConditions/>
       }
     ]
   }
-])
+], {basename: "/weatherapp"})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
