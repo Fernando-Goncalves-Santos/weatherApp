@@ -30,7 +30,6 @@ const Home = () => {
             const country = locationData.results[0].country;
             const iso = locationData.results[0].iso2;
             setCoord({ lat: latitude, lon: longitude, country: country, iso: iso });
-            console.log(`Nome do pais ${coord.country}`)
         } else {
             setLoading(false)
             setError(true)

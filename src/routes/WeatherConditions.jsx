@@ -65,14 +65,12 @@ const WeatherConditions = () => {
 
       // É de dia ou de noite?
       const timezones = ct.getTimezones(country.country);
-      console.log(`Fusos horários encontrados para ${country.country}:`, timezones)
       // Escolhe o primeiro fuso horário da lista como padrão
       const primaryTimezone = timezones[0]; 
 
       // Configura o horário com base no timezone e ajusta automaticamente para horário de verão
       const now = DateTime.now().setZone(primaryTimezone);
       const time = now.hour; // Obtém a hora local
-      console.log(`Time in ${country.country}:`, time);
       const isDaytime = time >= 6 && time < 18;
 
       if (isDaytime) {
@@ -119,7 +117,7 @@ const WeatherConditions = () => {
           </p>
         </div>
       </div>
-      <Link to={"/"} className="btn">Voltar</Link>
+      <Link to={"/weatherApp"} className="btn">Voltar</Link>
     </div>
   );
 };
