@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish";
+}
+
+html {
     overflow-x: hidden;
+    height: 100%;
 }
 
 body {
