@@ -1,0 +1,44 @@
+.form-container {
+    margin-top: 3rem;
+    max-width: 400px;
+    margin: 0 auto;    
+}
+
+.form-container button {
+    padding: .5rem 1rem;
+    margin: 1rem;
+    border-radius: 3px;
+    background-color: #dfdfdf;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    opacity: .8;
+}
+
+.form-container button:hover {
+    opacity: 1;
+}
+
+.form-control input {
+    margin-top: 2rem;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 3px;
+    border: none;
+    background-color: #FFF;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    font-size: 1rem;
+}
+
+.error {
+    font-size: .8rem;
+    padding: .5rem;
+    color: #7c7979;
+}
+
+@media (width <= 425px) {
+    #home-h1 {
+        font-size: 1.2rem;
+    }
+}

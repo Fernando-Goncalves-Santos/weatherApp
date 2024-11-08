@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('/rainy_background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (width <= 768px) {
+    body {
+        background-position: left;
+    }
+}
+
+@media (width <= 425px) {
+    body {
+        background-position: center;
+        background-repeat:repeat;
+    }
+}

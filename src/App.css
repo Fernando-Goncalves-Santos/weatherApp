@@ -1,0 +1,13 @@
+.app-container {
+    text-align: center;
+    max-width: 600px;
+    background-color: #f9fafc;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+@media (width <= 600px) {
+    .app-container{
+        margin: 1rem
+    }
+}
