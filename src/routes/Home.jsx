@@ -24,12 +24,19 @@ const Home = () => {
         const locationData = await response.json();
 
         // Acessa a latitude e longitude do primeiro resultado
+        if(locationData.results && location.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() != locationData.results[0].name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()) {
+          setLoading(false)
+          setError(true)
+          return
+        }
+
         if (locationData.results && locationData.results.length > 0) {
             const latitude = locationData.results[0].lat;
             const longitude = locationData.results[0].lon;
             const country = locationData.results[0].country;
             const iso = locationData.results[0].iso2;
             setCoord({ lat: latitude, lon: longitude, country: country, iso: iso });
+            setLocation(locationData.results[0].name)
         } else {
             setLoading(false)
             setError(true)
